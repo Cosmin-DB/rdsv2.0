@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rds2</title>
+			<link rel="stylesheet" href="/assets/stylesheets/bootstrap.min.css">
+			<script src="/assets/javascripts/bootstrap.min.js"></script>
+
+
+
+    <title>Rds</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +14,40 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<div class="row">
+	 			<div class="col-md-1" style="background-color:lavender;">Inicio
+				</div>
+	 			<div class="col-md-1" style="background-color:lavender;">Amigos
+				</div>
+	 			<div class="col-md-1" style="background-color:lavender;">Publicar
+				</div>
+
+   			<div class="col-md-8" style="background-color:lavender;">
+					<div class="input-group">
+				    <input type="text" class="form-control" placeholder="Search Blog..">
+				    <span class="input-group-btn">
+				      <button class="btn btn-default" type="button">
+				        <span class="glyphicon glyphicon-search"></span>
+				      </button>
+				    </span>
+				  </div>
+				</div>
+				<div class="col-md-1" style="background-color:lavender;">
+				<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+				</div>
+		</div>
+	<div class="row">
+  			<div class="col-md-3" style="background-color:lavenderblush;">
+              <div class="row">
+              	<div class="col-md-12"  style="background-color:lavender;">Perfil</div>
+              </div>
+              <div class="row">
+              	<div class="col-md-12"  style="background-color:lavender;">Notificaciones</div>
+              </div>
+            </div>
+  			<div class="col-md-9"  style="background-color:lavender;"><%= yield %></div>
+	</div>
+
+
   </body>
 </html>

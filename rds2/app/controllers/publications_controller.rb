@@ -24,6 +24,22 @@ class PublicationsController < ApplicationController
   # POST /publications
   # POST /publications.json
   def create
+
+		puts 
+		puts
+		puts
+		puts
+		puts
+				puts params[:text]
+				puts params[:date]= Time.new
+				#puts params[:user_id] =current_user
+		
+		puts 
+		puts
+		puts
+		puts
+		puts
+
     @publication = Publication.new(publication_params)
 
     respond_to do |format|

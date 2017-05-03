@@ -25,23 +25,8 @@ class PublicationsController < ApplicationController
   # POST /publications.json
   def create
 
-		puts 
-		puts
-		puts
-		puts
-		puts
-				puts params[:text]
-				puts params[:date]= Time.new
-				#puts params[:user_id] =current_user
-		
-		puts 
-		puts
-		puts
-		puts
-		puts
-
     @publication = Publication.new(publication_params)
-
+		@publication.user_id=current_user.id
     respond_to do |format|
       if @publication.save
         format.html { redirect_to @publication, notice: 'Publication was successfully created.' }

@@ -1,0 +1,112 @@
+  [1m[35m (28.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK('3605876513365762230', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateModels (20170427073814)
+  [1m[35m (28.0ms)[0m  [1m[35mCREATE TABLE `models` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (32.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_models_on_email`  ON `models` (`email`) [0m
+  [1m[35m (25.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_models_on_reset_password_token`  ON `models` (`reset_password_token`) [0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170427073814')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-04-27 07:38:26', '2017-04-27 07:38:26')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('3605876513365762230')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW CREATE TABLE `models`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'models'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3605876513365762230', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20170427074215)
+  [1m[35m (31.0ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170427074215')[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3605876513365762230')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `models`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'models'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3605876513365762230', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddNameToUsers (20170427074730)
+  [1m[35m (55.1ms)[0m  [1m[35mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170427074730')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3605876513365762230')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `models`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'models'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('3605876513365762230', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddRoleToUsers (20170427074851)
+  [1m[35m (55.9ms)[0m  [1m[35mALTER TABLE `users` ADD `role` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170427074851')[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('3605876513365762230')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `models`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'models'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/" for 127.0.0.1 at 2017-05-03 08:36:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-05-03 08:38:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 425ms (Views: 411.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-05-03 08:39:52 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwvzoajx1MG2kem5COafGvI67qw0FkECJWo54CfIWiZpfZoq4NK+eJrI54CjjyXWoPRPXIx2yD/cPWpAbnYeWA==", "user"=>{"email"=>"cosminef4a@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'cosminef4a@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('cosminef4a@gmail.com', '$2a$11$aOvS9fsIDc2cHA2wcCPoEefMt/lsB7zzsmoAHQMQQmMqbSxyIILRC', '2017-05-03 06:39:52', '2017-05-03 06:39:52')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2017-05-03 06:39:52', `last_sign_in_at` = '2017-05-03 06:39:52', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 1[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-03 08:39:52 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+

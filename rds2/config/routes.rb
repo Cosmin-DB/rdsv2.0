@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :shareds
   resources :publications
   devise_for :users, :controllers => { registrations: 'users/registrations' }
+	match 'notifications/new/:id' => 'notifications#new', via: [:get], :as =>:user_message
 	devise_scope :user do
     get '/users/sign_out', to: 'devise/sessions#destroy', as: :sign_out
   end

@@ -17,6 +17,7 @@
       <tr>
         <td><%= friend.name %></td>
         <td><%= friend.email %></td>
+				<td><%=link_to("Send Message",user_message_path(friend.id), method: "get")%></td>
       </tr>
     <% end %>
   </tbody>

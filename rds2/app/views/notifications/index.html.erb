@@ -16,10 +16,9 @@
     <% @notifications.each do |notification| %>
       <tr>
         <td><%= notification.text %></td>
-        <td><%= notification.type %></td>
+        <td><%= notification.type_notification %></td>
         <td><%= notification.user %></td>
         <td><%= link_to 'Show', notification %></td>
-        <td><%= link_to 'Edit', edit_notification_path(notification) %></td>
         <td><%= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -28,4 +27,3 @@
 
 <br>
 
-<%= link_to 'New Notification', new_notification_path %>

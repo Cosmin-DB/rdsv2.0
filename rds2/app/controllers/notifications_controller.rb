@@ -4,7 +4,9 @@ class NotificationsController < ApplicationController
   # GET /notifications
   # GET /notifications.json
   def index
-    @notifications = Notification.all
+
+			@notifications=  Notification.where(receiver_id: current_user.id)
+
   end
 
   # GET /notifications/1
@@ -14,18 +16,24 @@ class NotificationsController < ApplicationController
 
   # GET /notifications/new
   def new
-    @notification = Notification.new
+		if !params[:id].nil?
+			  @notification = Notification.new
+		else
+				render :file => "#{Rails.root}/public/404.html",  :status => 404
+		end
+
   end
 
-  # GET /notifications/1/edit
-  def edit
-  end
 
   # POST /notifications
   # POST /notifications.json
   def create
+
     @notification = Notification.new(notification_params)
-		#@notification.
+		@notification.user_id = current_user.id
+		@notification.type_notification = params[:notification][:type_notification]
+		@notification.receiver_id= params[:notification][:receiver_id]
+
     respond_to do |format|
       if @notification.save
         format.html { redirect_to @notification, notice: 'Notification was successfully created.' }
@@ -37,19 +45,6 @@ class NotificationsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /notifications/1
-  # PATCH/PUT /notifications/1.json
-  def update
-    respond_to do |format|
-      if @notification.update(notification_params)
-        format.html { redirect_to @notification, notice: 'Notification was successfully updated.' }
-        format.json { render :show, status: :ok, location: @notification }
-      else
-        format.html { render :edit }
-        format.json { render json: @notification.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   # DELETE /notifications/1
   # DELETE /notifications/1.json
@@ -69,6 +64,6 @@ class NotificationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notification_params
-      params.require(:notification).permit(:text, :type, :user_id)
+      params.require(:notification).permit(:receiver_id,:text, :type_notification, :user_id)
     end
 end

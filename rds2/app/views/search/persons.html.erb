@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Persons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+      <tr>
+        <td><%= friend.name %></td>
+        <td><%= friend.email %></td>
+				<td><%=link_to("Send Message",user_message_path(friend.id), method: "get")%></td>
+      </tr>
+    <% end %>
+
+    <% @persons.each do |person| %>
+      <tr>
+        <td><%= person.name %></td>
+        <td><%= person.email %></td>
+				<td><%=link_to("Send Message",user_message_path(person.id), method: "get")%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

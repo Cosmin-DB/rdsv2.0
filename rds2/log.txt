@@ -1,0 +1,1000 @@
+  377  gedit fibo.rb
+  378  irb
+  379  sudo reboot
+  380  irbv
+  381  irb
+  382  ls
+  383  mkdir ruby
+  384  cd ruby/
+  385  ls
+  386  gedit test.rb
+  387  irb
+  388  clear
+  389  irb
+  390  sudo reboot
+  391  sudo update
+  392  sudo apt update
+  393  sudo apt list --upgradable
+  394  sudo apt upgrade
+  395  ls
+  396  rails s
+  397  python
+  398  python3
+  399  ls
+  400  cd Documentos/
+  401  ls
+  402  cd Graficos_por_computador/
+  403  ls
+  404  python3
+  405  ls
+  406  cd ..
+  407  ls
+  408  mkdir desarolloWeb
+  409  cd desarolloWeb/
+  410  ls
+  411  mkdir twitterEample
+  412  cd twitterEample/
+  413  ls
+  414  rails new twitter -T -dsqlite3
+  415  rails new twitter -T -d sqlite3
+  416  ls
+  417  rm -R twitter/
+  418  ls
+  419  rails new twitter -T -d sqlite3
+  420  bundle install
+  421  ls
+  422  cd twitter/
+  423  ls
+  424  bundle install
+  425  rails server
+  426  rails g scaffold user name:string password:string
+  427  rails g scaffold tweet text:string user:references
+  428  rails g controller session new create destroy
+  429  rake db:migrate
+  430  ifconfig
+  431  wlp2s0 up
+  432  ls
+  433  ls -a
+  434  cd .gnome2
+  435  ls
+  436  cd network-admin-locations/
+  437  ls
+  438  ls -a
+  439  cd --
+  440  ls
+  441  cd .gnome
+  442  ls
+  443  ls -a
+  444  cd apps/
+  445  ls
+  446  cd ..
+  447  rm .gnome
+  448  rm .gnome -R
+  449  rm .gnome2 -R
+  450  ls -a
+  451  sudo update
+  452  sudo apt update
+  453  apt list -upgradable
+  454  apt list --upgradable
+  455  gnome-keyring
+  456  secret-tool
+  457  sudo secret-tool
+  458  seahorse
+  459  gnome-keyring.daemon
+  460  gnome-keyring-daemon
+  461  ls -a
+  462  cd .config/
+  463  ls
+  464  gnome-keyring
+  465  man gnome-keyrings
+  466  help
+  467  help gnome-keyring
+  468  info gnome-keyring
+  469  info gnome-keyring-daemon
+  470  secret-tool
+  471  info secret-tool
+  472  echo "hola" > archivo1.txt
+  473  ls
+  474  ls -l
+  475  echo "adios" > archivo1.txt:oculto
+  476  ls -l
+  477  rm archivo1.txt
+  478  rm archivo1.txt\:oculto 
+  479  ls
+  480  ifconfig
+  481  ifup wlp2s0
+  482  sudo reboot
+  483  sudo apt install wicd
+  484  sudo synaptic
+  485  man rails
+  486  help rails
+  487  info rails
+  488  ls
+  489  cd Documentos/
+  490  ls
+  491  cd desarolloWeb/
+  492  ls
+  493  cd twitterEample/twitter/app/controllers
+  494  cd ..
+  495  ls
+  496  rails g controller prueba1 metodoraro
+  497  cd ..
+  498  ls
+  499  cd ..
+  500  ls
+  501  brew services start mongodb
+  502  sudo apt install linuxbrew-wrapper
+  503  brew install mongodb
+  504  brew services start mongodb
+  505  sudo reboot
+  506  sudo synaptic
+  507  sudo apt install mongodb
+  508  ls
+  509  cd Documentos/
+  510  ls
+  511  cd desarolloWeb/
+  512  ls
+  513  mkdir red_social
+  514  ls
+  515  cd red_social/
+  516  mongo
+  517  rails new rds --skip-active-record
+  518  ls
+  519  cd .
+  520  cd ..
+  521  ls
+  522  cd rds/
+  523  ls
+  524  bundle install
+  525  ls
+  526  bundle install
+  527  rails generate mongoid:config
+  528  rails generate scaffold person name street city state
+  529  rails destroy scaffold person
+  530  mongodb 
+  531  mongodb-server
+  532  mongod
+  533  sudo synaptic
+  534  man mongodb-server
+  535  help mongodb-server
+  536  info mongodb-server
+  537  cat /etc/mongodb.conf 
+  538  gedit /etc/mongodb.conf 
+  539  mongodb
+  540  mongod
+  541  mongo
+  542  l
+  543  ls
+  544  cd ..
+  545  ls
+  546  cd twitter/
+  547  rails s
+  548  ifconfig
+  549  ping google.es
+  550  network-manager
+  551  /etc/init.d/networking restart
+  552  /etc/init.d/network-manager restart
+  553  sudo apt install cheese
+  554  ls
+  555  cd Documentos/Graficos_por_computador/Example01_HelloWorld/
+  556  ls
+  557  blenderplayer helloworld.blend 
+  558  /home/cosmin/Programas/blender-2.78c-linux-glibc219-x86_64/blenderplayer helloworld.blend 
+  559  /etc/init.d/network-manager restart
+  560  rails g scaffold publication text:string date:date user:references
+  561  rails g migration complete_user nombre:string 
+  562  rails g migration add_nombre_to_user nombre:string 
+  563  rails g migration add_nombre_to_users nombre:string 
+  564  rake db:migrate
+  565  generate
+  566  rails g migration
+  567  rails g migration add_name_to_user name:text
+  568  sudo service mongodb start
+  569  rails g migration add_name_to_user name:text
+  570  sudo service mongodb status
+  571  bundle install
+  572  rails g migration add_name_to_user name:text
+  573  rails g active_record:migration 
+  574  rails g active_record:migration add_name_to_user name:text
+  575  rake db:migrate
+  576  ls
+  577  cd ..
+  578  ls
+  579  cd cosmin/
+  580  ls
+  581  cd Documentos/
+  582  ls
+  583  cd desarolloWeb/
+  584  ls
+  585  cd rds/
+  586  ls
+  587  bundle install
+  588  rails g devise:install
+  589  rails g devise:views
+  590  rails g devise user
+  591  rake db:migrate
+  592  rails -s
+  593  rails s
+  594  mongod
+  595  mongo
+  596  db
+  597  mongo
+  598  /home/cosmin/Programas/blender-2.78c-linux-glibc219-x86_64/blenderplayer example.blend 
+  599  /etc/init.d/network-manager restart
+  600  ls
+  601  cd Do
+  602  cd Documentos/
+  603  ls
+  604  cd desarolloWeb/
+  605  ls
+  606  cd rds/
+  607  ls
+  608  rails g scaffold shared publication:references person:references
+  609  rails g scaffold shared likeit:references person:references
+  610  rails g scaffold likeit publication:references person:references
+  611  rails g scaffold friends person:references friendPerson:references
+  612  rails g scaffold friendRequests petitionerPerson:references Person:references
+  613  rails g scaffold notifications text:string type:string Person:references
+  614  rake db:migrate
+  615  rails g active_record:migration add_name_to_user name:text
+  616  rake db:migrate
+  617  rails
+  618  rails console
+  619  ls
+  620  rails s
+  621  mmls
+  622  sudo synaptic
+  623  mmls
+  624  mmls /dev/sdb
+  625  sudo mmls /dev/sdb
+  626  fsstat /dev/sdb2
+  627  sudofsstat /dev/sdb2
+  628  sudo fsstat /dev/sdb2
+  629  sudo fsstat /dev/sdb1
+  630  sudo fsstat /dev/sdb1 >log_ext4_sdb1
+  631  ls
+  632  gedit log_ext4_sdb1 
+  633  mmls /dev/sdc
+  634  sudo mmls /dev/sdc
+  635  sudo fsstat /dev/sdc
+  636  sudo fsstat /dev/sdc1
+  637  sudo mmls /dev/sdb
+  638  mongo
+  639  ls
+  640  mongo
+  641  /home/cosmin/Programas/blender-2.78c-linux-glibc219-x86_64/blenderplayer challenge_base.blend 
+  642  /etc/init.d/network-manager restart
+  643  /etc/init.d/network-manager start
+  644  ifconfig
+  645  service network-manager restart
+  646  service network-manager start
+  647  ls
+  648  cd Programas/
+  649  ls
+  650  git clone https://github.com/kliment/Printrun.git
+  651  ls
+  652  cd Printrun/
+  653  ls
+  654  sudo ./pronterface.py 
+  655  python setup.py build_ext --inplace
+  656  sudo ./pronterface.py 
+  657  sudo arduino
+  658  cd Programas/
+  659  ks
+  660  ls
+  661  cd arduino-1.8.2/
+  662  chmod +x install.sh
+  663  ./install.sh 
+  664  sudo ./install.sh 
+  665  cd ..
+  666  sudo synaptic
+  667  ls
+  668  cd Programas/
+  669  ls
+  670  cd Printrun/
+  671  ./pronterface.py 
+  672  sudo ./pronterface.py 
+  673  ls
+  674  cd ..
+  675  ls
+  676  cd arduino-1.8.1/
+  677  chmod +x install.sh 
+  678  ./install.sh 
+  679  ls
+  680  ./arduino
+  681  sudo ./arduino
+  682  cd Programas/
+  683  ls
+  684  cd arduino-1.8.1/
+  685  ls
+  686  sudo ./arduino
+  687  cd Programas/
+  688  ls
+  689  cd Printrun/
+  690  ls
+  691  sudo ./pronterface.py 
+  692  sudo service network-manager restart
+  693  sudo service network-manager start
+  694  cd Programas/
+  695  ks
+  696  ls
+  697  cd Printrun/
+  698  sudo ./pronterface.py 
+  699  cat /etc/issue
+  700  sudo service network-manager start
+  701  sudo service network-manager stop
+  702  sudo service network-manager start
+  703  nas
+  704  sudo service network-manager restart
+  705  sudo service network-manager restartç
+  706  sudo service network-manager restart
+  707  sudo service network-manager force-reload
+  708  git config --global user.name "constantincosmin.dobrescu@alu.uclm.es"
+  709  git config --global user.name "Cosmin-DB"
+  710  git config --global user.email "constantincosmin.dobrescu@alu.uclm.es"
+  711  mongodb
+  712  mongo
+  713  ls
+  714  cd Programas/
+  715  ls
+  716  cd ..
+  717  ls
+  718  cd Documentos/
+  719  ls
+  720  cd desarolloWeb/
+  721  lks
+  722  ls
+  723  cd rds/
+  724  ls
+  725  cd ..
+  726  cd rds/
+  727  git init
+  728  git add .
+  729  ls
+  730  git status
+  731  git commit -m "estructuras generales creadas"
+  732  git status
+  733  ls
+  734  git remote add origin https://github.com/Cosmin-DB/rds.git
+  735  git push -u origin master
+  736  cd ..
+  737  ls
+  738  clone https://github.com/Cosmin-DB/rds.git
+  739  git clone https://github.com/Cosmin-DB/rds.git
+  740  ls
+  741  cd rds
+  742  ls
+  743  git status
+  744  git add .
+  745  git status
+  746  git commit -m "estructuras generales creadas"
+  747  git push origin master
+  748  rails s
+  749  sudo service network-manager force-reload
+  750  sudo service network-manager restart
+  751  sudo synaptiuc
+  752  sudo synaptic
+  753  sudo service network-manager restart
+  754  sudo service network-manager start
+  755  sudo synaptic
+  756  history
+  757  nm-applet
+  758  ls /etc/xdg/autostart/
+  759  cd 
+  760  ls
+  761  cd Documentos/
+  762  ls
+  763  cd desarolloWeb/
+  764  ls
+  765  cd rds/
+  766  ls
+  767  rails generate migration add_admin_to_users admin:boolean
+  768  rails generate active_record:migration add_admin_to_users admin:boolean
+  769  rake db:drop:all
+  770  rake db:migrate
+  771  mongo
+  772  htop
+  773  cd Documentos/
+  774  ls
+  775  cd desarolloWeb/
+  776  ls
+  777  cd rds/
+  778  ls
+  779  rails s
+  780  history
+  781  mongodb
+  782  mongo
+  783  history
+  784  git status
+  785  git add .
+  786  git status
+  787  git commit -m "Add more fields to users collections,and configure 2 administrators"
+  788  git push origin master
+  789  git add .
+  790  git status
+  791  git add .
+  792  git status
+  793  git commit -m "Add bootstrap to app"
+  794  git push origin master
+  795  rake db:migrate
+  796  clear
+  797  rake db:migrate
+  798  gem install mongoid_rails_migrations
+  799  sudo gem install mongoid_rails_migrations
+  800  rake test:mongoid:migrations
+  801  bundle install
+  802  rake test:mongoid:migrations
+  803  bundle install
+  804  rake db:version
+  805  rake db:migrate
+  806  rails generate devise:controllers users
+  807  rake db:migrate
+  808  htop
+  809  sudo apt install dkms
+  810  sudo apt autoremove
+  811  sudo apt install dkms
+  812  sudo apt install gnome-system-tools
+  813  la
+  814  ls
+  815  cd Documentos/
+  816  ls
+  817  cd analisisForense/
+  818  ls
+  819  openssl genrsa -des3 -out server.key 2048
+  820  openssl rsa -in server.key -out server.key.insecure
+  821  mv server.key server.key.secure
+  822  mv server.key.insecure server.key
+  823  openssl req -new -key server.key -out server.csr
+  824  ls
+  825  cd certificado/
+  826  ls
+  827  openssl x509 -in server.csr  -inform DER -out server.pem -outform PEM
+  828  openssl pkcs12 -export -nocerts -inkey server.csr -out server.p12
+  829  openssl pkcs12 -export -nocerts -inkey ../server.key -out server.p12
+  830  ls
+  831  cd VirtualBox\ VMs/
+  832  ls
+  833  cd WXP/
+  834  ls
+  835  VBoxManage clonehd NewVirtualDisk1.vdi SecondRound_WithProuves.iso -format RA
+  836  VBoxManage clonehd NewVirtualDisk1.vdi SecondRound_WithProuves.iso --format RA
+  837  VBoxManage clonehd NewVirtualDisk1.vdi SecondRound_WithProuves.iso --format RAW
+  838  VBoxManage clonehd WXP.vdi SecondRound_WithProuves.iso --format RAW
+  839  ls
+  840  cd Do
+  841  cd Documentos/
+  842  ls
+  843  cd analisisForense/
+  844  ls
+  845  cd ..
+  846  ls
+  847  cd VirtualBox\ VMs/
+  848  ls
+  849  cd WXP/
+  850  ls
+  851  VBoxManage clonehd NewVirtualDisk1.vdi SecondPartition.iso --format RAW
+  852  mmls SecondRoundWithProves.E01 
+  853  fstat
+  854  fstat SecondRoundWithProves.E01 
+  855  fsstat SecondRoundWithProves.E01 
+  856  mmls SecondRoundWithProves.E01 
+  857  mmls DataPartition.E01 
+  858  ls
+  859  mmstat DataPartition.E01 
+  860  mmstat SecondRoundWithProves_desde_VDI.E01 
+  861  mmstat USB1.E0
+  862  mmstat USB1.E01
+  863  mmstat USB1.E02
+  864  mmls USB1.E02 
+  865  mmls USB1.E01
+  866  mmls SecondRound_WithProuves.E01 
+  867  mmls USB2.E01 
+  868  mmls SecondRound_WithProuves.E01 
+  869  fsstat -o 63 SecondRound_WithProuves.E01 
+  870  fsstat -o 63 USB1.E01
+  871  mmls USB1.E01 
+  872  fsstat -o 16128 USB1.E01
+  873  fsstat -o 16128 USB1.E01 >log
+  874  nano log 
+  875  gedit log 
+  876  mmls USB1.E01 
+  877  mmls USB2.E0
+  878  mmls USB2.E01
+  879  fsstat -o 32 USB1.E01 >log
+  880  fsstat -o 32 USB2.E01>log
+  881  gedit log 
+  882  VBoxManage clonehd NewVirtualDisk1.vdi DataPartition.iso --format RAW
+  883  ls
+  884  VBoxManage clonehd USB1.vdi USB1.iso --format RAW
+  885  VBoxManage clonehd USB2.vdi USB2.iso --format RAW
+  886  ÇQ
+  887  fls
+  888  clear
+  889  mmls /dev/sda
+  890  sudo mmls /dev/sda
+  891  fls -o 1026048 /dev/sda 
+  892  sudo fls -o 1026048 /dev/sda 
+  893  fls 
+  894  sudo fls -o 1026048 /dev/sda -D
+  895  sudo fls -o 1026048 /dev/sda -F
+  896  sudo fls -o 1026048 /dev/sda -r
+  897  sudo fls -o 1026048 /dev/sda -D
+  898  sudo fls -o 1026048 /dev/sda -d
+  899  sudo fls -o 1026048 /dev/sda 1818-144-5
+  900  sudo fls -o 1026048 /dev/sda 92213-144-5
+  901  sudo fls -o 1026048 /dev/sda 92213-144-5 -d
+  902  sudo fls -o 1026048 /dev/sda 92223-144-6
+  903  sudo fls -o 1026048 /dev/sda 92223-144-6 -d
+  904  sudo fls -o 1026048 /dev/sda 92223-144-6 -u
+  905  sudo fls -o 1026048 /dev/sda 92223-144-6 -d
+  906  sudo fls -o 1026048 /dev/sda 92213-144-5 
+  907  sudo fls -o 1026048 /dev/sda 92221-144-7
+  908  sudo fls -o 1026048 /dev/sda 92221-144-7 -d
+  909  sudo fls -o 1026048 /dev/sda 92221-144-7 
+  910  sudo fls -o 1026048 /dev/sda 92221-144-7 -d
+  911  sudo fls -d -o 1026048 /dev/sda 92221-144-7 
+  912  mmls /dev/sda
+  913  sudo mmls /dev/sda
+  914  sudo fls -d -o 274632704 /dev/sda
+  915  sudo fls -d -o 274632704 /dev/sda 15
+  916  sudo mmls /dev/sdb
+  917  sudo fls -d -o 2048 /dev/sdb 
+  918  sudo fls -d -o 199999488 /dev/sdb 
+  919  sudo fls  /dev/sdb1
+  920  sudo fls -o 274632704 /dev/sda 
+  921  sudo fls -o 274632704 /dev/sda 2883585
+  922  sudo fls /dev/sda1
+  923  sudo fls /dev/sda1 -d
+  924  sudo fls /dev/sda1 0-128-6
+  925  sudo fls /dev/sda2
+  926  sudo fls /dev/sda 20-128-6
+  927  sudo fls /dev/sda 1818-144-5
+  928  sudo fls /dev/sda2 1818-144-5
+  929  sudo fls /dev/sda2 
+  930  sudo fls /dev/sda2 0-128-6
+  931  clear
+  932  sudo fls /dev/sda2 
+  933  sudo fls /dev/sda2 -d
+  934  sudo fls /dev/sda2 -r -F -d
+  935  sudo fls /dev/sda2 
+  936  sudo fls /dev/sda2 1818-144-5
+  937  sudo fls /dev/sda3
+  938  sudo fls /dev/sda4
+  939  sudo fls /dev/sda4 2883585
+  940  sudo fls /dev/sda5
+  941  sudo fls /dev/sdb2
+  942  sudo fls /dev/sdb2 727923-144-2
+  943  sudo fls /dev/sdb2 727924-144-2
+  944  sudo fls /dev/sda2 727924-144-2 -r -F -d
+  945  sudo fls /dev/sdb2 727924-144-2 -r -F -d
+  946  sudo fls /dev/sdb2 727924-144-2 
+  947  sudo fls /dev/sdb2 776035-144-2 -r -F -d
+  948  istat
+  949  sudo istat /dev/sdb2 
+  950  sudo istat /dev/sdb2
+  951  sudo istat /dev/sdb
+  952  sudo fls /dev/sdb2 
+  953  sudo istat /dev/sdb2 0-128-1
+  954  sudo fls /dev/sdb2 
+  955  sudo istat /dev/sdb2 6-128-1
+  956  sudo istat /dev/sdb2 6-128-1 |less
+  957  sudo fls /dev/sdb2 
+  958  sudo istat /dev/sdb2 0-128-1 |less
+  959  sudo fls /dev/sdc
+  960  sudo fls /dev/sdc1
+  961  sudo fls /dev/sdc1 -r -d
+  962  sudo istat /dev/sdc1 11 |less
+  963  sudo fls /dev/sdb
+  964  mmls /dev/sdb
+  965  sudo mmls /dev/sdb
+  966  sudo mmls /dev/sdb2
+  967  sudo mmls /dev/sdb1
+  968  sudo mmls -o 199999488 /dev/sdb
+  969  sudo fls /dev/sdb
+  970  sudo fls /dev/sdb2
+  971  sudo fls /dev/sdb2 727923-144-2
+  972  sudo fls /dev/sda
+  973  sudo fls /dev/sdb2 776035-144-2
+  974  sudo mmls /dev/sda
+  975  sudo fls /dev/sda1
+  976  sudo fls /dev/sda4
+  977  sudo fls /dev/sda4 2883585
+  978  sudo fls /dev/sda4 1835009
+  979  sudo fls /dev/sda4 1835010
+  980  sudo fls /dev/sdb1
+  981  sudo fls /dev/sdb1 4456449
+  982  sudo fls /dev/sdb1 4456464
+  983  sudo fls /dev/sdb1 4456464 -d
+  984  sudo istat /dev/sdb1 4456674 |less
+  985  man fls
+  986  sudo service network-manager restart
+  987  ipconfig
+  988  ifconfig
+  989  cat /etc/resolv.conf 
+  990  sudo service network-manager restart
+  991  ifconfig
+  992  cat /etc/resolv.conf 
+  993  ping 8.8.8.8
+  994  cat /etc/resolv.conf 
+  995  nano /etc/resolv.conf 
+  996  sudo nano /etc/resolv.conf 
+  997  sudo service network-manager restart
+  998  cat /etc/resolv.conf 
+  999  sudo apt-get install wireshark
+ 1000  sudo groupadd wireshark
+ 1001  sudo usermod -a -G wireshark YOUR_USER_NAME
+ 1002  sudo chgrp wireshark /usr/bin/dumpcap
+ 1003  sudo chmod 750 /usr/bin/dumpcap
+ 1004  sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+ 1005  sudo usermod -a -G wireshark cosmin
+ 1006  sudo chgrp wireshark /usr/bin/dumpcap
+ 1007  sudo chmod 750 /usr/bin/dumpcap
+ 1008  sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+ 1009  sudo getcap /usr/bin/dumpcap
+ 1010  ping 8.8.8.8
+ 1011  ping 192.168.1.1
+ 1012  ifconfig
+ 1013  ping 192.168.1.2
+ 1014  nmcli dev show | grep DNS
+ 1015  ping 8.8.8.8
+ 1016  ping google.es
+ 1017  ifconfig
+ 1018  sudo service network-manager restart
+ 1019  sudo service network-manager start
+ 1020  nmcli dev show | grep DNS
+ 1021  ping fayerwayer.com
+ 1022  ping 8.8.8.8
+ 1023  ping google.es
+ 1024  ifconfig
+ 1025  xinput -list
+ 1026  xinput set-int-prop "<strong>SynPS/2 Synaptics TouchPad</strong>" "Device Enabled" 8 0
+ 1027  xinput set-int-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 8 0
+ 1028  xinput set-int-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 8 1
+ 1029  sudo service network-manager restart
+ 1030  sudo apt-get install audio-recorder
+ 1031  udo add-apt-repository ppa:audio-recorder/ppa
+ 1032  sudo add-apt-repository ppa:audio-recorder/ppa
+ 1033  sudo apt update
+ 1034  sudo apt install audio-recorder
+ 1035  audio-recorder 
+ 1036  dd count=100 bs=1M if=/dev/urandom of=/media/cosmin/42633C0325F8657E/rnd_100mb.out
+ 1037  sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+ 1038  sudo dpkg -i *.deb
+ 1039  sudo apt update
+ 1040  sudo apt-get -f install
+ 1041  sudo dpkg -i *.deb
+ 1042  sudo apt update
+ 1043  sudo apt upgrade
+ 1044  sudo apt update
+ 1045  xrandr --output LVDS-1-0 --mode 1920x1080 --pos 0x0 --rotate normal --output VGA-1-0 --off
+ 1046  man xrandr
+ 1047  45689777777777777777761
+ 1048  5230.13564879999999999999999999023.364
+ 1049  58888888888888888880ª.
+ 1050  sudo gedit /etc/UPower/UPower.conf
+ 1051  sudo apt-get remove --purge -y light-locker light-locker-settings
+ 1052  sudo reboot
+ 1053  sudo gedit /etc/UPower/UPower.conf
+ 1054  sudo apt install light-locker light-locker-settings
+ 1055  gedit /etc/pm/sleep.d/00_screen
+ 1056  sudo gedit /etc/pm/sleep.d/00_screen
+ 1057  sudo rebooot
+ 1058  sudo reboot
+ 1059  sudo gedit /etc/pm/sleep.d/00_screen
+ 1060  sudo apt install light-locker light-locker-settings
+ 1061  light-locker
+ 1062  light-locker-settings 
+ 1063  sudo gedit /etc/UPower/UPower.conf
+ 1064  sudo reboot
+ 1065  ls
+ 1066  cd Documentos/
+ 1067  ls
+ 1068  cd desarolloWeb/
+ 1069  ls
+ 1070  cd rds
+ 1071  ls
+ 1072  rails .s
+ 1073  rails -s
+ 1074  ls
+ 1075  clear
+ 1076  rails -s
+ 1077  histor
+ 1078  rails s
+ 1079  sudo gedit /etc/pm/sleep.d/00_screen
+ 1080  xrandr --auto
+ 1081  CD Documentos/
+ 1082  cd Documentos/
+ 1083  ls
+ 1084  cd desarolloWeb/
+ 1085  ls
+ 1086  cd rds
+ 1087  rails s
+ 1088  history
+ 1089  history > log.h
+ 1090  gedit log
+ 1091  gedit log.h 
+ 1092  rbi
+ 1093  irb
+ 1094  ls
+ 1095  cd Documentos/desarolloWeb/rds
+ 1096  ls
+ 1097  rails s
+ 1098  cd Documentos/desarolloWeb/
+ 1099  mkdir rdsv2.0
+ 1100  ls
+ 1101  çcd rdsv2.0/
+ 1102  cd rdsv2.0/
+ 1103  ls
+ 1104  man rails
+ 1105  help rails
+ 1106  info rails
+ 1107  cd ..
+ 1108  ls
+ 1109  cd /home/cosmin/Documentos/desarolloWeb/
+ 1110  ls
+ 1111  cd rds
+ 1112  cd ..
+ 1113  ls
+ 1114  cd rdsv2.0/
+ 1115  ls
+ 1116  rails new rds2 -d mysql
+ 1117  rails new rds2 -d mysqlls
+ 1118  ls
+ 1119  cd rds2/
+ 1120  ls
+ 1121  cd ..
+ 1122  sudo gem install bundler
+ 1123  gem install bundler
+ 1124  ls
+ 1125  rm rds2/
+ 1126  rm rds2/ -R
+ 1127  ls
+ 1128  rails new rds2 -d mysql
+ 1129  ls
+ 1130  mysql-server
+ 1131  service mysql start
+ 1132  service mysql status
+ 1133  mysql-client
+ 1134  mysql
+ 1135  mysql -u cosmin
+ 1136  mysql -u cosmin -p
+ 1137  mysql -u root -p
+ 1138  ls
+ 1139  cd rds2/
+ 1140  ls
+ 1141  cd ..
+ 1142  rake db:create
+ 1143  rake db:create --trace
+ 1144  ls
+ 1145  cd rds2/
+ 1146  ls
+ 1147  rake db:create --trace
+ 1148  rake db:create
+ 1149  ls
+ 1150  rake db:create
+ 1151  bundle install
+ 1152  rails generate devise:install
+ 1153  rails generate devise MODEL
+ 1154  rake db:migrate
+ 1155  rails generate devise:controllers users
+ 1156  rails generate devise:install
+ 1157  rails generate devise user
+ 1158  rails generate devise:controllers users
+ 1159  rake db:migrate
+ 1160  rrails generate devise:views users
+ 1161  rails generate devise:views users
+ 1162  rails generate migration add_name_to_users name:string
+ 1163  rake db:migrate
+ 1164  rails generate migration add_role_to_users role:string
+ 1165  rake db:migrate
+ 1166  ls
+ 1167  cd ../../..
+ 1168  ls
+ 1169  cd analisisForense/
+ 1170  ls
+ 1171  mmls T01.dd 
+ 1172  fsstat -o 64 
+ 1173  fsstat -o 64 T01.dd 
+ 1174  fsstat -o 64 T01.dd -t
+ 1175  fsstat -o 64 T01.dd -v
+ 1176  man fsstat
+ 1177  man mmls
+ 1178  mmls T01.dd -m
+ 1179  mmls T01.dd -m -o 64
+ 1180  mmls T01.dd -M
+ 1181  man mmls
+ 1182  mmls T01.dd 
+ 1183  ls
+ 1184  istat T01.dd
+ 1185  istat T01.dd -o 64
+ 1186  istat -o 64 T01.dd 
+ 1187  fls -o 64 T01.dd 
+ 1188  fls
+ 1189  fls -o 64 T01.dd -D -r
+ 1190  fls -o 64 T01.dd  -r
+ 1191  fls -o 64 T01.dd -F -r
+ 1192  fls -o 64 T01.dd -D -r
+ 1193  fls -o 64 T01.dd -D -r -u
+ 1194  fls -o 64 T01.dd -F -r -u
+ 1195  fls
+ 1196  fls -o 64 T01.dd -F -r -d
+ 1197  fsstat -o 64 T01.dd 
+ 1198  fls -o 64 T01.dd -F -r -d
+ 1199  fls -o 64 T01.dd  -r -d
+ 1200  fls -o 64 T01.dd  -r -u
+ 1201  istat -o 64 T01.dd 326278
+ 1202  istat -o 64 T01.dd 326277
+ 1203  istat -o 64 T01.dd 326276
+ 1204  fls -o 64 T01.dd  -r -u
+ 1205  istat
+ 1206  istat -o 64 T01.dd 2
+ 1207  istat -o 64 T01.dd 3
+ 1208  fsstat 
+ 1209  fsstat T01.dd -o 6
+ 1210  fsstat T01.dd -o 64
+ 1211  fls -o 1 T01.dd  -r 
+ 1212  fsstat T01.dd -o 1
+ 1213  fsstat T01.dd -o 0
+ 1214  fsstat
+ 1215  fsstat T01.dd -o 1 -f fat12
+ 1216  fsstat T01.dd -o 1 -f ntfs
+ 1217  fsstat T01.dd -o 1 -f ext
+ 1218  fsstat T01.dd -o 1 -f ext4
+ 1219  fsstat T01.dd -o 1 -f ext3
+ 1220  fsstat T01.dd -o 1 -f ext2
+ 1221  fsstat T01.dd -o 1 -f ext1
+ 1222  fsstat T01.dd -o 1 -i fat12
+ 1223  fsstat T01.dd -o 1 -i fat
+ 1224  fsstat T01.dd -o 1 -f fat
+ 1225  mmls T01.dd 
+ 1226  ls
+ 1227  clear
+ 1228  mmls T01.dd 
+ 1229  fsstat T01.dd -o 1
+ 1230  fsstat
+ 1231  fsstat T01.dd -o 1 -t
+ 1232  fsstat T01.dd  -t
+ 1233  fsstat T01.dd-t
+ 1234  fsstat T01.dd -t ufs
+ 1235  fsstat T01.dd -o 1 -t ufs
+ 1236  fsstat -t ufs T01.dd
+ 1237  fsstat -t ufs -o 64 T01.dd
+ 1238  fsstat -o 64 T01.dd
+ 1239  fls
+ 1240  icat T01.dd .o 1
+ 1241  icat T01.dd 
+ 1242  ifind T01.dd 
+ 1243  ifind T01.dd -o 64
+ 1244  ifind -o64 T01.dd
+ 1245  ifind -o 64 T01.dd
+ 1246  ifind -o 64 T01.dd -a
+ 1247  sudo cheese 
+ 1248  python
+ 1249  ls
+ 1250  cd Programas/
+ 1251  ls
+ 1252  cd blender-2.78c-linux-glibc219-x86_64/
+ 1253  ls
+ 1254  export PATH=$PATH:$HOME//Programas/blender-2.78c-linux-glibc219-x86_64
+ 1255  ls
+ 1256  gedit .bashrc 
+ 1257  blenderplayer tests_1.blend
+ 1258  blenderplayer main.blend
+ 1259  ls
+ 1260  cd Do
+ 1261  cd Documentos/
+ 1262  ls
+ 1263  cd desarolloWeb/
+ 1264  git status
+ 1265  git add .
+ 1266  git status
+ 1267  git commit -m "first functional bakup from rds2.0 with mysql"
+ 1268  git status
+ 1269  cd ..
+ 1270  git stauts
+ 1271  git status
+ 1272  ls
+ 1273  git add .
+ 1274  git status
+ 1275  git push origin master
+ 1276  ls
+ 1277  cd rds2/
+ 1278  ls
+ 1279  rails g scaffold publication text:string date:date user:references
+ 1280  rake db:migrate
+ 1281  cd ..
+ 1282  ls
+ 1283  git add .
+ 1284  git status
+ 1285  gir commit -m "add publication"
+ 1286  git commit -m "add publication"
+ 1287  git status
+ 1288  git push origin master
+ 1289  git status
+ 1290  git add .
+ 1291  git status
+ 1292  gir commit -m "add bootstrap, configure routes, modify contorllers"
+ 1293  git commit -m "add bootstrap, configure routes, modify contorllers"
+ 1294  git push origin master
+ 1295  rails g active_record:migration RemoveColumns
+ 1296  rails g migration RemoveColumns
+ 1297  rails generate migration RemoveColumns
+ 1298  ls
+ 1299  cd rds2/
+ 1300  rails generate migration RemoveColumns
+ 1301  rake db:migrate
+ 1302  git status
+ 1303  git add .
+ 1304  git commit -m "can create new publication edit update or destroy"
+ 1305  git push origin master
+ 1306  rails generate migration AddFriendTable
+ 1307  rake db:migrate
+ 1308  rails g scaffold friends user:references friend:references
+ 1309  rake db:migrate
+ 1310  rake db:migrate:redo VERSION=20170503082131
+ 1311  clear
+ 1312  rake db:migrate:redo VERSION=20170503082131
+ 1313  cd rds2/
+ 1314  ls
+ 1315  rails -s
+ 1316  rails s
+ 1317  gedit ../../rds/log.h 
+ 1318  blenderplayer main.blend
+ 1319  [A
+ 1320  blenderplayer main.blend
+ 1321  [A
+ 1322  blenderplayer main.blend
+ 1323  ls
+ 1324  mmls T04.dd 
+ 1325  fls T04.dd 
+ 1326  history
+ 1327  sudo mount -o ro T04.dd T04
+ 1328  fls T04.dd 
+ 1329  fsstat T04.
+ 1330  fsstat T04.dd
+ 1331  ls
+ 1332  fls 
+ 1333  fls -ru T04.dd 
+ 1334  fls -rd T04.dd 
+ 1335  istat T04.dd 3
+ 1336  istat T04.dd 565
+ 1337  fls -ru T04.dd 
+ 1338  fls -rd T04.dd 
+ 1339  fcat 565 T04.dd 
+ 1340  fcat -b 512 T04.dd 
+ 1341  fcat
+ 1342  fcat -f
+ 1343  fcat -f list
+ 1344  fcat -i list
+ 1345  fcat
+ 1346  fcat -o 52 -b 512 -f fat12 T04.dd 
+ 1347  fcat -b 512 -f fat12 T04.dd 
+ 1348  icat
+ 1349  fcat -b 512 -f fat12 T04.dd _ir1/_ir2/_ile2.txt
+ 1350  fcat -b 512 -f fat12 T04.dd _ile2.txt
+ 1351  fcat T04.dd _ile2.txt
+ 1352  icat 
+ 1353  fls -rd T04.dd 
+ 1354  icat 565 T04.dd 
+ 1355  icat T04.dd 565 
+ 1356  ls
+ 1357  fsstat T04.dd 
+ 1358  fls -rd T04.dd 
+ 1359  fls -ru T04.dd 
+ 1360  icat 533
+ 1361  icat 533 T04.dd 
+ 1362  istat 533 T04.dd 
+ 1363  istat T04.dd  53
+ 1364  istat T04.dd  533
+ 1365  fls -rd T04.dd 
+ 1366  fls -ru T04.dd 
+ 1367  istat T04.dd 534
+ 1368  istat T04.dd 597
+ 1369  istat T04.dd 3
+ 1370  istat T04.dd 5
+ 1371  fls -ru T04.dd 
+ 1372  fsstat T04.dd 
+ 1373  blenderplayer main.blend
+ 1374  history
+ 1375  history > |gedit
+ 1376  history > log.txt

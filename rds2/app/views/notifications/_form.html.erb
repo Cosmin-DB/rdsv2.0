@@ -14,9 +14,10 @@
   <div class="field">
     <%= f.label :text %>
     <%= f.text_area(:text, cols: 90, rows: 25) %>
-  </div>
+		<%= f.hidden_field :receiver_id, :value => params[:id]%>
+		<%= f.hidden_field :type_notification, :value => "message" %>
 
-<%=params[:id]%>
+  </div>
 
   <div class="actions">
     <%= f.submit %>

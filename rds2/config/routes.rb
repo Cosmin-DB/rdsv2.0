@@ -5,8 +5,13 @@ Rails.application.routes.draw do
   resources :likeits
   resources :shareds
   resources :publications
+	resources :search
   devise_for :users, :controllers => { registrations: 'users/registrations' }
 	match 'notifications/new/:id' => 'notifications#new', via: [:get], :as =>:user_message
+
+	match 'search_persons' => 'search#persons', via: [:post], :as =>:search_persons
+	#match 'search_persons' => 'search#persons', via: [:get], :as =>:search_persons
+	get "/search_persons" => redirect("/")
 	devise_scope :user do
     get '/users/sign_out', to: 'devise/sessions#destroy', as: :sign_out
   end

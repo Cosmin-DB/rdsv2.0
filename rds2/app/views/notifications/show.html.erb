@@ -1,19 +1,16 @@
-<p id="notice"><%= notice %></p>
-
+<div class="well well-lg ">
 <p>
-  <strong>Text:</strong>
+  <strong>From:</strong>
+  <%= User.find(@notification.user_id).name %>
+</p>
+<p>
+  <strong>Message:</strong>
   <%= @notification.text %>
 </p>
 
-<p>
-  <strong>Type:</strong>
-  <%= @notification.type_notification %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @notification.user %>
-</p>
-
-<%= link_to 'Edit', edit_notification_path(@notification) %> |
+<% if @notification.type_notification=="friendship_request"%>
+<%= link_to 'Accept', create_friend_path(current_user.id,@notification.user_id),method: :post %>
+<%= link_to 'Deny', notifications_path %>
+<%end %>
 <%= link_to 'Back', notifications_path %>
+</div>

@@ -1,9 +1,9 @@
 class Users::ConfirmationsController < Devise::ConfirmationsController
 skip_before_action :authenticate_user!
   # GET /resource/confirmation/new
-  # def new
-  #   super
-  # end
+#   def new
+#     super
+#   end
 
   # POST /resource/confirmation
   # def create

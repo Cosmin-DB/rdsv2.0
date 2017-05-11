@@ -15,11 +15,18 @@
     <%= f.label :text %>
     <%= f.text_area(:text, cols: 90, rows: 25) %>
 		<%= f.hidden_field :receiver_id, :value => params[:id]%>
-		<%= f.hidden_field :type_notification, :value => "message" %>
+		<%= f.hidden_field :type_notification, :value => params[:type] %>
 
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= 
+    if params[:type]=="message"
+    	f.submit "Send Message"
+    else
+    	f.submit "Request"
+    end
+    	
+    %>
   </div>
 <% end %>

@@ -1,13 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="well well-lg ">
 
-<h1>Friends</h1>
-
-<table>
+<table class="table table-striped">
+ <caption><h2 class="text-primary">Friends</h2></caption>
   <thead>
     <tr>
-      <th>User</th>
-      <th>Friend</th>
-      <th colspan="3"></th>
+      <th>Name</th>
+      <th>Email</th>
     </tr>
   </thead>
 
@@ -17,11 +15,12 @@
       <tr>
         <td><%= friend.name %></td>
         <td><%= friend.email %></td>
-				<td><%=link_to("Send Message",user_message_path(friend.id), method: "get")%></td>
+		<td><%=link_to("Send Message",user_message_path("message",friend.id), method: "get")%></td>
+		<td><%=link_to("Delete Friend",destroy_friend_path(current_user.id,friend.id), method: "delete")%></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+</div>
 

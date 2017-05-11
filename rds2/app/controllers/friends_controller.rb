@@ -28,17 +28,16 @@ class FriendsController < ApplicationController
   # POST /friends
   # POST /friends.json
   def create
-    @friend = Friend.new(friend_params)
-
-    respond_to do |format|
-      if @friend.save
-        format.html { redirect_to @friend, notice: 'Friend was successfully created.' }
-        format.json { render :show, status: :created, location: @friend }
-      else
-        format.html { render :new }
-        format.json { render json: @friend.errors, status: :unprocessable_entity }
-      end
-    end
+    friend = Friend.new(friend_params)
+#    friend.user_id=params[]
+#    friend.friend_id
+    friend.save
+     Notification.where("(user_id= ? OR user_id=?)
+    AND 
+    (receiver_id=? OR receiver_id=? )
+    AND type_notification='friendship_request'",friend.user_id,friend.friend_id,friend.friend_id,friend.user_id).destroy_all
+    
+    
   end
 
   # PATCH/PUT /friends/1
@@ -58,21 +57,19 @@ class FriendsController < ApplicationController
   # DELETE /friends/1
   # DELETE /friends/1.json
   def destroy
-    @friend.destroy
-    respond_to do |format|
-      format.html { redirect_to friends_url, notice: 'Friend was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    @friend=Friend.where("user_id = ? AND friend_id=?",params[:user_id],params[:friend_id]).destroy_all
+    reload
+
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_friend
-      @friend = Friend.find(params[:id])
+      @friend=Friend.where("user_id = params[:user_id] AND friend_id=params[:friend_id]")
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def friend_params
-      params.require(:friend).permit(:user_id, :friend_id)
+      params.permit(:user_id, :friend_id)
     end
 end

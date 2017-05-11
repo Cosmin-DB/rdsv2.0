@@ -14,46 +14,75 @@
   </head>
 
   <body>
-  	<div class="row">
-	 			<div class="col-md-1" style="background-color:lavender;">Inicio
+  <nav class="navbar navbar-inverse">
+  	<div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="/">Start</a>
+	    </div>
+		<ul class="nav navbar-nav">
+	      <li><a href="/friends">Friends</a></li>
+	      <li><%= link_to 'Publicar', new_publication_path %></li>
+	      <li>
+			<%= form_tag(search_persons_path, :method => :get,:class => 'navbar-form navbar-left')  do %>
+			 	<%= text_field_tag(:name_search , "",class: "form-control") %>
+				<%= button_tag(type: 'submit', class: "btn btn-default") do %>
+				 <span class="glyphicon glyphicon-search"></span>
+				<% end %>
+			<% end %>
+		  </li>
+    	</ul>
+		<ul class="nav navbar-nav navbar-right">
+	      <li>
+	      		<%= link_to  destroy_user_session_path, method: :get do  %>
+	      			<span class="glyphicon glyphicon-log-in"></span> Logout
+	      		<% end %>
+	      </li>
+	    </ul>
+	</div>
+  </nav>
+	<div class="container ">
+	
+		<div class="row">
+		    <div class="col-sm-3 well">
+		    	<div class="well">
+		      		<p><%= render partial: "/box_info"%></p>
+		    	</div>
+		    	
+		    	 <table class="table table-hover well well-lg notification_list">
+		    	  <caption><h4 class="text-primary">Notifications</h4></caption>
+				    <thead>
+				      <tr>
+				        <th>From</th>
+				        <th>Content</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				    
+						<%@notifications.first(5).each do |notification|%>
+							<tr>
+				      	      <td><%= User.find(notification.user_id).name %></td>
+				      	 
+						        <td><%= notification.text %></td>
+						      
+						      </tr>
+		              	<%end %>
+		              		<tr>
+				      	    <td colspan="2">
+								<%=link_to("See more...",notifications_path,method: :get,class: "btn btn-info btn-sm")%>
+							</td>
+						     </tr>
+		              </tbody>
+		         </table>
+		    	
+		    </div>
+		    <div class="col-sm-9 text-left"> 
+		    	<div class="row">
+          		
+					<%= yield %>
+				
 				</div>
-	 			<div class="col-md-1" style="background-color:lavender;">Amigos
-				</div>
-	 			<div class="col-md-1" style="background-color:lavender;">Publicar
-				</div>
-
-   			<div class="col-md-8" style="background-color:lavender;">
-
-					<div class="input-group">
-					
-						<%= form_tag search_persons_path, :method => :post do %>
- 							 	<%= text_field_tag(:name_search , "",class: "form-control") %>
-								<span class="input-group-btn">
-									<%= button_tag(type: 'submit', class: "btn btn-default") do %>
-									 <span class="glyphicon glyphicon-search"></span>
-									<% end %>
-								</span>
-						<% end %>
-
-				  </div>
-
-				</div>
-				<div class="col-md-1" style="background-color:lavender;">
-				<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-				</div>
+		    </div>
 		</div>
-	<div class="row">
-  			<div class="col-md-3" style="background-color:lavenderblush;">
-              <div class="row">
-              	<div class="col-md-12"  style="background-color:lavender;">
-										<%= render partial: "/box_info", object: @test %>
-								</div>
-              </div>
-              <div class="row">
-              	<div class="col-md-12"  style="background-color:lavender;">Notificaciones</div>
-              </div>
-            </div>
-  			<div class="col-md-9"  style="background-color:lavender;"><%= yield %></div>
 	</div>
 
 

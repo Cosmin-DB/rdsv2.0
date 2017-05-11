@@ -10,13 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504070223) do
+ActiveRecord::Schema.define(version: 20170511064149) do
 
-  create_table "friends", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "friends", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "user_id"
     t.integer "friend_id"
     t.index ["friend_id"], name: "index_friends_on_friend_id", using: :btree
     t.index ["user_id"], name: "index_friends_on_user_id", using: :btree
+  end
+
+  create_table "images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "url"
+    t.integer  "publication_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["publication_id"], name: "index_images_on_publication_id", using: :btree
+  end
+
+  create_table "likes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "publication_id"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["publication_id"], name: "index_likes_on_publication_id", using: :btree
+    t.index ["user_id"], name: "index_likes_on_user_id", using: :btree
   end
 
   create_table "models", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -55,6 +72,15 @@ ActiveRecord::Schema.define(version: 20170504070223) do
     t.index ["user_id"], name: "index_publications_on_user_id", using: :btree
   end
 
+  create_table "shares", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "publication_id"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["publication_id"], name: "index_shares_on_publication_id", using: :btree
+    t.index ["user_id"], name: "index_shares_on_user_id", using: :btree
+  end
+
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -74,6 +100,12 @@ ActiveRecord::Schema.define(version: 20170504070223) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "images", "publications"
+  add_foreign_key "likes", "publications"
+  add_foreign_key "likes", "users"
   add_foreign_key "notifications", "users"
+  add_foreign_key "notifications", "users", column: "receiver_id", name: "notifications_ibfk_1"
   add_foreign_key "publications", "users"
+  add_foreign_key "shares", "publications"
+  add_foreign_key "shares", "users"
 end

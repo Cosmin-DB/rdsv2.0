@@ -4,8 +4,14 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def index
-    @publications = Publication.all
-		@test= current_user.name
+    sql = "SELECT  publications.*
+            FROM publications
+            WHERE publications.user_id=#{current_user.id} OR publications.user_id IN (
+            SELECT friends.friend_id FROM friends WHERE friends.user_id=#{current_user.id}
+            )OR publications.user_id IN(
+            SELECT friends.user_id FROM friends WHERE friends.friend_id=#{current_user.id}
+            );"
+    @publications=Publication.find_by_sql(sql)
   end
 
   # GET /publications/1
@@ -16,6 +22,7 @@ class PublicationsController < ApplicationController
   # GET /publications/new
   def new
     @publication = Publication.new
+    
   end
 
   # GET /publications/1/edit

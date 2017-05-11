@@ -1,94 +1,3 @@
-  377  gedit fibo.rb
-  378  irb
-  379  sudo reboot
-  380  irbv
-  381  irb
-  382  ls
-  383  mkdir ruby
-  384  cd ruby/
-  385  ls
-  386  gedit test.rb
-  387  irb
-  388  clear
-  389  irb
-  390  sudo reboot
-  391  sudo update
-  392  sudo apt update
-  393  sudo apt list --upgradable
-  394  sudo apt upgrade
-  395  ls
-  396  rails s
-  397  python
-  398  python3
-  399  ls
-  400  cd Documentos/
-  401  ls
-  402  cd Graficos_por_computador/
-  403  ls
-  404  python3
-  405  ls
-  406  cd ..
-  407  ls
-  408  mkdir desarolloWeb
-  409  cd desarolloWeb/
-  410  ls
-  411  mkdir twitterEample
-  412  cd twitterEample/
-  413  ls
-  414  rails new twitter -T -dsqlite3
-  415  rails new twitter -T -d sqlite3
-  416  ls
-  417  rm -R twitter/
-  418  ls
-  419  rails new twitter -T -d sqlite3
-  420  bundle install
-  421  ls
-  422  cd twitter/
-  423  ls
-  424  bundle install
-  425  rails server
-  426  rails g scaffold user name:string password:string
-  427  rails g scaffold tweet text:string user:references
-  428  rails g controller session new create destroy
-  429  rake db:migrate
-  430  ifconfig
-  431  wlp2s0 up
-  432  ls
-  433  ls -a
-  434  cd .gnome2
-  435  ls
-  436  cd network-admin-locations/
-  437  ls
-  438  ls -a
-  439  cd --
-  440  ls
-  441  cd .gnome
-  442  ls
-  443  ls -a
-  444  cd apps/
-  445  ls
-  446  cd ..
-  447  rm .gnome
-  448  rm .gnome -R
-  449  rm .gnome2 -R
-  450  ls -a
-  451  sudo update
-  452  sudo apt update
-  453  apt list -upgradable
-  454  apt list --upgradable
-  455  gnome-keyring
-  456  secret-tool
-  457  sudo secret-tool
-  458  seahorse
-  459  gnome-keyring.daemon
-  460  gnome-keyring-daemon
-  461  ls -a
-  462  cd .config/
-  463  ls
-  464  gnome-keyring
-  465  man gnome-keyrings
-  466  help
-  467  help gnome-keyring
   468  info gnome-keyring
   469  info gnome-keyring-daemon
   470  secret-tool
@@ -998,3 +907,94 @@
  1374  history
  1375  history > |gedit
  1376  history > log.txt
+ 1377  gedit log.txt 
+ 1378  rails s
+ 1379  git stauts
+ 1380  git status
+ 1381  git add .
+ 1382  git status
+ 1383  git add .
+ 1384  git status
+ 1385  git commit -m "general information in layout, make friends logic, and some litle modifications"
+ 1386  git push origin master
+ 1387  rails g scaffold notifications text:string type:string user:references
+ 1388  rake db:migrate
+ 1389  rails g migration add_user_to_notifications user:reference
+ 1390  git status
+ 1391  git add .
+ 1392  git status
+ 1393  git commit -m "add notification logic"
+ 1394  git push origin master
+ 1395  rake db:migrate
+ 1396  ls
+ 1397  la
+ 1398  ls
+ 1399  gedit history
+ 1400  history |gedit
+ 1401  rake db:migrate:redo VERSION=20170504070223
+ 1402  clear
+ 1403  rake db:migrate:redo VERSION=20170504070223
+ 1404  clear
+ 1405  rake db:migrate:redo VERSION=20170504070223
+ 1406  clera
+ 1407  clear
+ 1408  rake db:migrate:redo VERSION=20170504070223
+ 1409  clear
+ 1410  rake db:migrate:redo VERSION=20170504070223
+ 1411  blenderplayer main.blend
+ 1412  [A
+ 1413  blenderplayer main.blend
+ 1414  [A
+ 1415  blenderplayer main.blend
+ 1416  python
+ 1417  blenderplayer main.blend
+ 1418  [A
+ 1419  blenderplayer main.blend
+ 1420  [A
+ 1421  blenderplayer main.blend
+ 1422  python
+ 1423  blenderplayer main.
+ 1424  blenderplayer main.blend
+ 1425  rake db:migrate:redo VERSION=20170504070223
+ 1426  rails s
+ 1427  blenderplayer main.blend
+ 1428  [A
+ 1429  blenderplayer main.blend
+ 1430  blenderplayer
+ 1431  blenderplayer main.blend -f -m
+ 1432  blenderplayer main.blend -f 
+ 1433  blenderplayer main.blend -fb -m16
+ 1434  blenderplayer main.blend -f b -m 16
+ 1435  blenderplayer main.blend -fb -m 16
+ 1436  blenderplayer -fb -m 16 main.blend
+ 1437  service network-manager restart
+ 1438  git status
+ 1439  git add .
+ 1440  git status
+ 1441  history
+ 1442  git status
+ 1443  git commit -m "Functionality for search, and modify column in notification"
+ 1444  history
+ 1445  git push origin master
+ 1446  rails g scaffold likeshare publication:references user:references like:boolean shared:boolean
+ 1447  rake db:migrate
+ 1448  git reset --hard e7bb21b20fb6ba6af33568505160f5efc3631d67
+ 1449  git reset --hard e7bb21b
+ 1450  git stauts
+ 1451  git status
+ 1452  cd ..
+ 1453  git clone https://github.com/Cosmin-DB/rdsv2.0.git
+ 1454  cd ..
+ 1455  git clone https://github.com/Cosmin-DB/rdsv2.0.git
+ 1456  rails g scaffold share publication:references user:references 
+ 1457  ls
+ 1458  cd rdsv2.0/
+ 1459  ls
+ 1460  cd rds2/
+ 1461* 
+ 1462  rails g scaffold share publication:references user:references 
+ 1463  rake db:migrate
+ 1464  rails g scaffold like publication:references user:references
+ 1465  rake db:migrate
+ 1466  history
+ 1467  history >log.txt

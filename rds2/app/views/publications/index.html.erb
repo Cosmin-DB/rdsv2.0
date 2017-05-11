@@ -5,6 +5,7 @@
 	<%= publication.text %>
 </div>
 </div>
+
 <div class="row">
 <div class="col-sm-1">
 	<% if Share.find_by(user_id: current_user.id, publication_id: publication.id) %>

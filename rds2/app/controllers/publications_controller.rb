@@ -22,7 +22,7 @@ class PublicationsController < ApplicationController
   # GET /publications/new
   def new
     @publication = Publication.new
-    
+
   end
 
   # GET /publications/1/edit
@@ -35,6 +35,13 @@ class PublicationsController < ApplicationController
 
     @publication = Publication.new(publication_params)
 		@publication.user_id=current_user.id
+    @publication.avatar= params[:publication][:image]
+      puts
+    puts
+    puts
+    puts
+    puts
+    puts
     respond_to do |format|
       if @publication.save
         format.html { redirect_to @publication, notice: 'Publication was successfully created.' }
